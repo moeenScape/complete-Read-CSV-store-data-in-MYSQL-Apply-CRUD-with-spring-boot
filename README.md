@@ -1,11 +1,14 @@
 ﻿# complete-Read-CSV-store-data-in-MYSQL-Apply-CRUD-with-spring-boot-html-css-js
-# spring.datasource.url= jdbc:mysql://localhost:3306/csvFileApp?createDatabaseIfNotExist=true
-# spring.datasource.username= root
-# spring.datasource.password= root
 
+#spring.datasource.url= jdbc:mysql://localhost:3306/csvFileApp?createDatabaseIfNotExist=true
+#
+#spring.datasource.username= root
+#
+#spring.datasource.password= root
+
+# Hibernate ddl auto Config
 #spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQLDialect
-
-# Hibernate ddl auto (create, create-drop, validate, update)
+#Hibernate ddl auto (create, create-drop, validate, update)
 #spring.jpa.hibernate.ddl-auto= update
 #spring.servlet.multipart.max-file-size=2MB
 #spring.servlet.multipart.max-request-size=2MB
