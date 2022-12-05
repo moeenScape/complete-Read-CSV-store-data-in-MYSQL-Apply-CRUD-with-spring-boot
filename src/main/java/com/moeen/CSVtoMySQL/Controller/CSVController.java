@@ -90,6 +90,13 @@ public class CSVController {
         List<DeveloperTutorial> tutorials = fileService.getAllTutorials();
         return new ResponseEntity<>(tutorials,HttpStatus.OK);
     }
+    @GetMapping("/search/{title}")
+    public ResponseEntity<List<DeveloperTutorial>> getNameBySearch(@PathVariable("title") String title)
+    {
+        List<DeveloperTutorial> tutorials = fileService.searchByName(title);
+        return new ResponseEntity<>(tutorials,HttpStatus.OK);
+    }
+
     @GetMapping("/download/{fileName:.+}")
     public ResponseEntity<Resource> downloadFile(@PathVariable String fileName) {
         InputStreamResource file = new InputStreamResource(fileService.load());
@@ -101,8 +108,3 @@ public class CSVController {
     }
 
 }
-
-
-
-
-

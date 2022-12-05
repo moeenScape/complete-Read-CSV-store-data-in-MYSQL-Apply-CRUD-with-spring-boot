@@ -62,4 +62,10 @@ public class CSVService {
     {
         return repository.getCustomTutorial();
     }
+
+    public List<DeveloperTutorial> searchByName(String title)
+    {
+        return repository.searchName(title);
+    }
+
 }
